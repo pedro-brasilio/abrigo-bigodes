@@ -1,0 +1,11 @@
+# IDEs
+.vscode/
+.idea/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs
+*.log

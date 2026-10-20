@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Abrigo Bigodes</title>
+  <meta name="description" content="Conheça os gatos e cachorros do Abrigo Bigodes que estão esperando uma família. Adoção gratuita e responsável.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Calistoga&family=Figtree:wght@400;500;600;700&family=Gochi+Hand&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="pular" href="#animais">Pular para os animais</a>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Principal">
+      <a class="logo" href="#topo" aria-label="Abrigo Bigodes, início">
+        <svg class="logo-ico" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="19" r="7"/>
+          <circle cx="7.5" cy="11.5" r="3"/>
+          <circle cx="13" cy="6.5" r="3"/>
+          <circle cx="19" cy="6.5" r="3"/>
+          <circle cx="24.5" cy="11.5" r="3"/>
+        </svg>
+        <span>Abrigo Bigodes</span>
+      </a>
+      <ul class="nav-links" id="menu">
+        <li><a href="#animais">Animais</a></li>
+        <li><a href="#como-adotar">Como adotar</a></li>
+        <li><a href="#finais-felizes">Finais felizes</a></li>
+        <li><a href="#ajude">Ajude</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="btn btn-primario btn-nav js-adotar" type="button">Quero adotar</button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="topo">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-texto">
+        <p class="eyebrow"><span class="pulso" aria-hidden="true"></span> 12 animais esperando um lar agora</p>
+        <h1>Tem alguém aqui esperando por você.</h1>
+        <p class="hero-sub">Somos uma ONG de Campinas que resgata, trata e encontra famílias para gatos e cachorros abandonados. Todo animal sai daqui vacinado, castrado e com muito carinho guardado.</p>
+        <div class="hero-acoes">
+          <a class="btn btn-primario" href="#animais">
+            Conhecer os animais
+            <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </a>
+          <a class="btn btn-fantasma" href="#como-adotar">Como funciona a adoção</a>
+        </div>
+        <ul class="hero-numeros">
+          <li><strong>312</strong><span>adoções desde 2019</span></li>
+          <li><strong>100%</strong><span>castrados e vacinados</span></li>
+          <li><strong>90 dias</strong><span>de acompanhamento após a adoção</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-pilha" aria-hidden="true">
+        <figure class="polaroid p1">
+          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=520&h=600&fit=crop&q=75&auto=format" alt="" width="520" height="600">
+          <figcaption>Mimosa, 2 anos</figcaption>
+        </figure>
+        <figure class="polaroid p2">
+          <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=520&h=600&fit=crop&q=75&auto=format" alt="" width="520" height="600">
+          <figcaption>Biscoito, 4 meses</figcaption>
+        </figure>
+        <figure class="polaroid p3">
+          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=520&h=600&fit=crop&q=75&auto=format" alt="" width="520" height="600">
+          <figcaption>Paçoca, 3 anos</figcaption>
+        </figure>
+        <p class="bilhete">me leva pra casa?</p>
+      </div>
+    </section>
+
+    <!-- ANIMAIS -->
+    <section class="secao animais" id="animais" aria-labelledby="titulo-animais">
+      <div class="secao-cabeca">
+        <p class="eyebrow">Disponíveis para adoção</p>
+        <h2 id="titulo-animais">Conheça quem está procurando uma família</h2>
+        <p class="secao-sub">Cada ficha foi escrita pelos voluntários que cuidam deles todos os dias. Encontrou alguém especial? Clique em “Quero conhecer” e a gente marca uma visita.</p>
+      </div>
+
+      <div class="filtros" role="group" aria-label="Filtrar animais">
+        <fieldset class="filtro">
+          <legend>Espécie</legend>
+          <input type="radio" name="especie" id="esp-todos" checked>
+          <label for="esp-todos">Todos</label>
+          <input type="radio" name="especie" id="esp-gato">
+          <label for="esp-gato">Gatos</label>
+          <input type="radio" name="especie" id="esp-cachorro">
+          <label for="esp-cachorro">Cachorros</label>
+        </fieldset>
+        <fieldset class="filtro">
+          <legend>Idade</legend>
+          <input type="radio" name="idade" id="id-todas" checked>
+          <label for="id-todas">Qualquer idade</label>
+          <input type="radio" name="idade" id="id-filhote">
+          <label for="id-filhote">Filhotes</label>
+          <input type="radio" name="idade" id="id-adulto">
+          <label for="id-adulto">Adultos</label>
+          <input type="radio" name="idade" id="id-idoso">
+          <label for="id-idoso">Idosos</label>
+        </fieldset>
+      </div>
+
+      <div class="grade">
+
+        <!-- Gatos -->
+        <article class="ficha" data-especie="gato" data-idade="filhote">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=640&h=720&fit=crop&q=75&auto=format" alt="Pipoca, gatinha tigrada sentada no chão olhando para a câmera" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Pipoca</h3>
+                <span class="sexo">Fêmea</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>3 meses</dd></div>
+                <div><dt>Porte</dt><dd>Pequeno</dd></div>
+                <div><dt>Chegou em</dt><dd>set/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Vacinada (1ª dose)</li><li>Vermifugada</li><li>FIV/FeLV negativo</li>
+              </ul>
+              <p class="nota">Brinca com tudo, até com a própria sombra. Dorme no colo depois.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Pipoca">
+                Quero conhecer a Pipoca
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="cachorro" data-idade="adulto">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=640&h=720&fit=crop&q=75&auto=format" alt="Paçoca, cachorro caramelo e branco com a língua de fora, sorrindo" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Paçoca</h3>
+                <span class="sexo">Macho</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>3 anos</dd></div>
+                <div><dt>Porte</dt><dd>Médio</dd></div>
+                <div><dt>Chegou em</dt><dd>jun/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Castrado</li><li>V10 e antirrábica</li><li>Microchipado</li>
+              </ul>
+              <p class="nota">Anda na guia como um lorde. Se dá bem com gatos e crianças.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Paçoca">
+                Quero conhecer o Paçoca
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="gato" data-idade="idoso">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=640&h=720&fit=crop&q=75&auto=format" alt="Seu Bento, gato tigrado deitado tranquilo sobre um sofá claro" loading="lazy" width="640" height="720">
+              <span class="selo">Esperando há 1 ano e 7 meses</span>
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Seu Bento</h3>
+                <span class="sexo">Macho</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>11 anos</dd></div>
+                <div><dt>Porte</dt><dd>Médio</dd></div>
+                <div><dt>Chegou em</dt><dd>mar/2025</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Castrado</li><li>V4 e antirrábica</li><li>FIV/FeLV negativo</li>
+              </ul>
+              <p class="nota">Um senhor educado. Quer sol na janela e alguém pra conversar à noite.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Seu Bento">
+                Quero conhecer o Seu Bento
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="cachorro" data-idade="filhote">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=640&h=720&fit=crop&q=75&auto=format" alt="Biscoito, filhote de pelo dourado com coleira vermelha" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Biscoito</h3>
+                <span class="sexo">Macho</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>4 meses</dd></div>
+                <div><dt>Porte</dt><dd>Grande (adulto)</dd></div>
+                <div><dt>Chegou em</dt><dd>ago/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>V10 (2ª dose)</li><li>Vermifugado</li><li>Castração agendada</li>
+              </ul>
+              <p class="nota">Vai crescer bastante! Precisa de quintal e de alguém com energia.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Biscoito">
+                Quero conhecer o Biscoito
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="gato" data-idade="adulto">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=640&h=720&fit=crop&q=75&auto=format" alt="Mimosa, gata branca com manchas pretas apoiada numa mesa de madeira" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Mimosa</h3>
+                <span class="sexo">Fêmea</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>2 anos</dd></div>
+                <div><dt>Porte</dt><dd>Pequeno</dd></div>
+                <div><dt>Chegou em</dt><dd>mai/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Castrada</li><li>V4 e antirrábica</li><li>FIV/FeLV negativo</li>
+              </ul>
+              <p class="nota">Tímida no começo, depois não sai do seu pé. Ideal para apartamento telado.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Mimosa">
+                Quero conhecer a Mimosa
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="cachorro" data-idade="idoso">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?w=640&h=720&fit=crop&q=75&auto=format" alt="Tobias, cachorro de pelo dourado com focinho já grisalho, sorrindo" loading="lazy" width="640" height="720">
+              <span class="selo">Esperando há 1 ano e 2 meses</span>
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Tobias</h3>
+                <span class="sexo">Macho</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>10 anos</dd></div>
+                <div><dt>Porte</dt><dd>Grande</dd></div>
+                <div><dt>Chegou em</dt><dd>ago/2025</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Castrado</li><li>V10 e antirrábica</li><li>Controle de artrose</li>
+              </ul>
+              <p class="nota">Passeio curto, cochilo longo. O cachorro mais calmo do abrigo.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Tobias">
+                Quero conhecer o Tobias
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="gato" data-idade="filhote">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1615789591457-74a63395c990?w=640&h=720&fit=crop&q=75&auto=format" alt="Tico, gatinho tigrado e branco de olhos grandes" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Tico</h3>
+                <span class="sexo">Macho</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>2 meses</dd></div>
+                <div><dt>Porte</dt><dd>Pequeno</dd></div>
+                <div><dt>Chegou em</dt><dd>out/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Vermifugado</li><li>1ª vacina em nov</li><li>FIV/FeLV negativo</li>
+              </ul>
+              <p class="nota">Resgatado de um bueiro junto com a mãe. Hoje ronrona alto e come bem.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Tico">
+                Quero conhecer o Tico
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="cachorro" data-idade="adulto">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=640&h=720&fit=crop&q=75&auto=format" alt="Nina, cachorra branca com orelhas pretas sorrindo numa calçada" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Nina</h3>
+                <span class="sexo">Fêmea</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>5 anos</dd></div>
+                <div><dt>Porte</dt><dd>Médio</dd></div>
+                <div><dt>Chegou em</dt><dd>fev/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Castrada</li><li>V10 e antirrábica</li><li>Microchipada</li>
+              </ul>
+              <p class="nota">Sabe sentar, dar a pata e pedir carinho com o focinho. Prefere ser filha única.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Nina">
+                Quero conhecer a Nina
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="gato" data-idade="adulto">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=640&h=720&fit=crop&q=75&auto=format" alt="Laranjinha, gato laranja peludo deitado olhando para cima" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Laranjinha</h3>
+                <span class="sexo">Macho</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>4 anos</dd></div>
+                <div><dt>Porte</dt><dd>Grande</dd></div>
+                <div><dt>Chegou em</dt><dd>jan/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Castrado</li><li>V4 e antirrábica</li><li>FIV/FeLV negativo</li>
+              </ul>
+              <p class="nota">Mia pra dar bom dia e pra pedir sachê. Convive bem com outros gatos.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Laranjinha">
+                Quero conhecer o Laranjinha
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="cachorro" data-idade="filhote">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=640&h=720&fit=crop&q=75&auto=format" alt="Amora, filhote caramelo de orelhas grandes em pé" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Amora</h3>
+                <span class="sexo">Fêmea</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>5 meses</dd></div>
+                <div><dt>Porte</dt><dd>Pequeno (adulto)</dd></div>
+                <div><dt>Chegou em</dt><dd>jul/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>V10 completa</li><li>Vermifugada</li><li>Castração agendada</li>
+              </ul>
+              <p class="nota">As orelhas chegam antes dela. Já está aprendendo a fazer xixi no tapete.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Amora">
+                Quero conhecer a Amora
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="gato" data-idade="idoso">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=640&h=720&fit=crop&q=75&auto=format" alt="Dona Nena, gata de pelo bege com cara séria sentada perto de uma janela" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Dona Nena</h3>
+                <span class="sexo">Fêmea</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>9 anos</dd></div>
+                <div><dt>Porte</dt><dd>Médio</dd></div>
+                <div><dt>Chegou em</dt><dd>nov/2025</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Castrada</li><li>V4 e antirrábica</li><li>Ração renal</li>
+              </ul>
+              <p class="nota">A cara é de brava, mas é só charme. Adora escova e casa silenciosa.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Dona Nena">
+                Quero conhecer a Dona Nena
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" data-especie="cachorro" data-idade="idoso">
+          <div class="ficha-core">
+            <figure class="ficha-foto">
+              <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=640&h=720&fit=crop&q=75&auto=format" alt="Dona Cacau, cachorra pequena tricolor com orelhas dobradas" loading="lazy" width="640" height="720">
+            </figure>
+            <div class="ficha-corpo">
+              <div class="ficha-topo">
+                <h3>Dona Cacau</h3>
+                <span class="sexo">Fêmea</span>
+              </div>
+              <dl class="dados">
+                <div><dt>Idade</dt><dd>9 anos</dd></div>
+                <div><dt>Porte</dt><dd>Pequeno</dd></div>
+                <div><dt>Chegou em</dt><dd>abr/2026</dd></div>
+              </dl>
+              <ul class="saude" aria-label="Saúde">
+                <li>Castrada</li><li>V10 e antirrábica</li><li>Microchipada</li>
+              </ul>
+              <p class="nota">Ainda corre atrás de bolinha como filhote. Ótima companhia para quem mora sozinho.</p>
+              <button class="btn-ficha js-adotar" type="button" data-nome="Dona Cacau">
+                Quero conhecer a Dona Cacau
+                <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="contagem" aria-live="polite"> de 12 animais</p>
+    </section>
+
+    <!-- COMO ADOTAR -->
+    <section class="secao adotar" id="como-adotar" aria-labelledby="titulo-adotar">
+      <div class="secao-cabeca">
+        <p class="eyebrow">Como adotar</p>
+        <h2 id="titulo-adotar">Do primeiro “oi” até a ida pra casa</h2>
+        <p class="secao-sub">A adoção é gratuita. O processo leva em média uma semana e existe para garantir que ninguém volte para a rua.</p>
+      </div>
+
+      <ol class="passos">
+        <li class="passo">
+          <span class="passo-num">1</span>
+          <h3>Escolha e fale com a gente</h3>
+          <p>Clique em “Quero conhecer” na ficha do animal e mande sua mensagem pelo WhatsApp.</p>
+        </li>
+        <li class="passo">
+          <span class="passo-num">2</span>
+          <h3>Conversa com a equipe</h3>
+          <p>Uma voluntária faz algumas perguntas sobre sua rotina e sua casa, sem julgamentos.</p>
+        </li>
+        <li class="passo">
+          <span class="passo-num">3</span>
+          <h3>Visita ao abrigo</h3>
+          <p>Você conhece o animal pessoalmente, aos sábados, com horário marcado.</p>
+        </li>
+        <li class="passo">
+          <span class="passo-num">4</span>
+          <h3>Termo e boas-vindas</h3>
+          <p>Assinamos o termo de adoção e acompanhamos a adaptação durante 90 dias.</p>
+        </li>
+      </ol>
+
+      <div class="requisitos">
+        <div class="requisitos-core">
+          <h3>Antes de começar, você vai precisar de</h3>
+          <ul>
+            <li>Ter 18 anos ou mais</li>
+            <li>RG e comprovante de residência</li>
+            <li>Telas de proteção nas janelas, se for adotar um gato</li>
+            <li>Que todos da casa estejam de acordo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAIS FELIZES -->
+    <section class="secao felizes" id="finais-felizes" aria-labelledby="titulo-felizes">
+      <div class="secao-cabeca">
+        <p class="eyebrow">Finais felizes</p>
+        <h2 id="titulo-felizes">Eles já encontraram uma família</h2>
+      </div>
+      <ul class="faixa">
+        <li>
+          <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=440&h=520&fit=crop&q=75&auto=format" alt="Bolota correndo na praia" loading="lazy" width="440" height="520">
+          <p>Bolota, adotado em ago/2026</p>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=440&h=520&fit=crop&q=75&auto=format" alt="Frida, gata de bandana amarela miando feliz" loading="lazy" width="440" height="520">
+          <p>Frida, adotada em jul/2026</p>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?w=440&h=520&fit=crop&q=75&auto=format" alt="Algodão, cachorrinho branco correndo na grama" loading="lazy" width="440" height="520">
+          <p>Algodão, adotado em jun/2026</p>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=440&h=520&fit=crop&q=75&auto=format" alt="Sushi, gatinho levantando a pata" loading="lazy" width="440" height="520">
+          <p>Sushi, adotado em mai/2026</p>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=440&h=520&fit=crop&q=75&auto=format" alt="Mel, cachorra caramelo deitada de barriga para cima na grama" loading="lazy" width="440" height="520">
+          <p>Mel, adotada em abr/2026</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- AJUDE -->
+    <section class="secao ajude" id="ajude" aria-labelledby="titulo-ajude">
+      <div class="secao-cabeca">
+        <p class="eyebrow">Não pode adotar agora?</p>
+        <h2 id="titulo-ajude">Ainda dá pra fazer muita diferença</h2>
+      </div>
+
+      <div class="bento">
+        <article class="caixa caixa-destaque">
+          <div class="caixa-core">
+            <h3>Apadrinhe um animal</h3>
+            <p>Com <strong>R$ 30 por mês</strong> você garante ração, vermífugo e consultas de um animal até ele ser adotado. Mandamos fotos e notícias todo mês.</p>
+            <a class="btn btn-claro" href="#contato">
+              Quero apadrinhar
+              <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </div>
+        </article>
+        <article class="caixa">
+          <div class="caixa-core">
+            <h3>Seja lar temporário</h3>
+            <p>Receba um animal em casa por algumas semanas enquanto ele espera adoção. A ONG cobre ração e veterinário.</p>
+          </div>
+        </article>
+        <article class="caixa">
+          <div class="caixa-core">
+            <h3>Doe ração e itens</h3>
+            <p>As mais pedidas agora: ração para filhotes, ração renal para gatos, areia e tapetes higiênicos.</p>
+          </div>
+        </article>
+        <article class="caixa caixa-pix">
+          <div class="caixa-core">
+            <h3>Doe pelo PIX</h3>
+            <p>Qualquer valor ajuda. A chave é o nosso e-mail:</p>
+            <div class="pix">
+              <code id="chave-pix">pix@abrigobigodes.org.br</code>
+              <button class="btn-copiar" type="button" data-copiar="chave-pix">Copiar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape" id="contato">
+    <div class="rodape-grade">
+      <div>
+        <a class="logo" href="#topo">
+          <svg class="logo-ico" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="19" r="7"/>
+            <circle cx="7.5" cy="11.5" r="3"/>
+            <circle cx="13" cy="6.5" r="3"/>
+            <circle cx="19" cy="6.5" r="3"/>
+            <circle cx="24.5" cy="11.5" r="3"/>
+          </svg>
+          <span>Abrigo Bigodes</span>
+        </a>
+        <p class="rodape-texto">Resgate, cuidado e adoção responsável de gatos e cachorros desde 2019.</p>
+      </div>
+      <div>
+        <h3>Visitas</h3>
+        <p>Sábados, das 10h às 16h<br>Somente com horário marcado</p>
+      </div>
+      <div>
+        <h3>Endereço</h3>
+        <p>Rua das Acácias, 214<br>Jardim das Flores, Campinas – SP</p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>WhatsApp: (19) 99999-0000<br>contato@abrigobigodes.org.br<br>Instagram: @abrigobigodes</p>
+      </div>
+    </div>
+    <p class="rodape-base">© 2026 Abrigo Bigodes. Feito com carinho pelos voluntários.</p>
+  </footer>
+
+  <!-- FORMULÁRIO DE ADOÇÃO -->
+  <dialog class="modal" id="modal-adotar" aria-labelledby="modal-titulo">
+    <form class="modal-form" id="form-adotar">
+      <div class="modal-topo">
+        <h2 id="modal-titulo">Quero adotar</h2>
+        <button class="modal-fechar" type="button" aria-label="Fechar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <p class="modal-sub">Preencha rapidinho e a mensagem abre pronta no WhatsApp da ONG.</p>
+
+      <label class="campo">
+        <span>Animal de interesse</span>
+        <select id="f-animal" name="animal">
+          <option value="Ainda não escolhi">Ainda não escolhi</option>
+          <option>Pipoca</option>
+          <option>Tico</option>
+          <option>Mimosa</option>
+          <option>Laranjinha</option>
+          <option>Seu Bento</option>
+          <option>Dona Nena</option>
+          <option>Biscoito</option>
+          <option>Amora</option>
+          <option>Paçoca</option>
+          <option>Nina</option>
+          <option>Tobias</option>
+          <option>Dona Cacau</option>
+        </select>
+      </label>
+      <label class="campo">
+        <span>Seu nome</span>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+      </label>
+      <div class="campo-linha">
+        <label class="campo">
+          <span>Cidade</span>
+          <input id="f-cidade" name="cidade" type="text" autocomplete="address-level2" required>
+        </label>
+        <label class="campo">
+          <span>Moradia</span>
+          <select id="f-moradia" name="moradia">
+            <option>Casa</option>
+            <option>Apartamento</option>
+            <option>Chácara / sítio</option>
+          </select>
+        </label>
+      </div>
+      <label class="campo">
+        <span>Conte um pouco sobre sua rotina <em>(opcional)</em></span>
+        <textarea id="f-mensagem" name="mensagem" rows="3" placeholder="Ex.: trabalho em home office e já tenho uma gata castrada."></textarea>
+      </label>
+
+      <button class="btn btn-primario btn-enviar" type="submit">
+        Enviar pelo WhatsApp
+        <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+    </form>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
