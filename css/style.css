@@ -1,4 +1,4 @@
-/* Layout: hero editorial dividido (texto + pilha de polaroids), Protocolo CED, vídeos dos castrados, fichas de adoção em grade, bento de doações, prestação de contas */
+/* Layout: hero só com texto, Protocolo CED, vídeos dos castrados, fichas de adoção em grade, bento de doações, prestação de contas */
 :root {
   --bg: #eef2ea;
   --surface: #ffffff;
@@ -219,12 +219,34 @@ svg { flex-shrink: 0; }
 
 /* ---------- Hero ---------- */
 .hero {
-  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
-  align-items: center; gap: clamp(2rem, 5vw, 4rem);
   max-width: var(--max); margin: 0 auto;
   padding: clamp(3rem, 8vw, 6rem) var(--gutter) clamp(3rem, 7vw, 5rem);
 }
-.hero-texto { display: flex; flex-direction: column; gap: 1.5rem; min-width: 0; }
+/* Uma coluna em diagonal: título no alto à esquerda, texto e botões embaixo à direita */
+.hero-texto {
+  display: flex; flex-direction: column; justify-content: space-between; gap: clamp(2.5rem, 7vw, 5rem);
+  min-height: clamp(24rem, 62vh, 38rem);
+}
+.hero h1 {
+  max-width: 16ch;
+  font-family: var(--f-display); font-weight: 400;
+  font-size: clamp(2.8rem, 8vw, 6.75rem); line-height: 0.98; letter-spacing: -0.02em;
+}
+.hero-topo { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; }
+.hero-logo { flex: none; width: clamp(6.5rem, 15vw, 12rem); height: auto; margin-top: 0.4rem; }
+.hero-logo-forma { fill: var(--rose); }
+.hero-logo-olhos { fill: none; stroke: var(--bg); stroke-width: 5; stroke-linecap: round; }
+.hero-apoio { display: flex; flex-direction: column; gap: 1.5rem; align-self: flex-end; width: min(100%, 33rem); }
+.hero-sub { font-size: 1.15rem; color: var(--muted); }
+.hero-acoes { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+@media (max-width: 720px) {
+  .hero-texto { min-height: 0; }
+  .hero-topo { flex-direction: column-reverse; gap: 1.25rem; }
+  .hero-logo { width: 5rem; margin-top: 0; }
+  .hero-apoio { align-self: stretch; width: auto; }
+}
+
 .pulso {
   width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--rose);
   box-shadow: 0 0 0 0 var(--rose);
@@ -234,79 +256,11 @@ svg { flex-shrink: 0; }
   0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--rose) 60%, transparent); }
   70%, 100% { box-shadow: 0 0 0 9px transparent; }
 }
-.hero h1 {
-  font-family: var(--f-display); font-weight: 400;
-  font-size: clamp(2.6rem, 6.2vw, 4.6rem); line-height: 1.02; letter-spacing: -0.015em;
-}
-.hero-sub { max-width: 34rem; font-size: 1.15rem; color: var(--muted); }
-.hero-acoes { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-.hero-numeros {
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem;
-  max-width: 34rem; margin-top: 0.5rem; padding-top: 1.5rem;
-  border-top: 1px dashed var(--line);
-}
-.hero-numeros li { display: flex; flex-direction: column; gap: 0.15rem; }
-.hero-numeros strong { font-family: var(--f-display); font-weight: 400; font-size: 1.3rem; line-height: 1.1; }
-.hero-numeros span { font-size: 0.85rem; line-height: 1.35; color: var(--muted); }
-
-.hero-pilha {
-  position: relative; display: grid; place-items: center;
-  min-height: 30rem; min-width: 0;
-}
-.polaroid {
-  grid-area: 1 / 1;
-  width: min(58%, 17rem);
-  margin: 0; padding: 0.6rem 0.6rem 0;
-  border-radius: 1.1rem;
-  background: var(--surface);
-  box-shadow: inset 0 0 0 1px var(--line), var(--shadow);
-  animation: entra-polaroid 1s var(--ease) backwards;
-  transition: transform 0.7s var(--ease);
-}
-.polaroid img { width: 100%; aspect-ratio: 13 / 15; object-fit: cover; border-radius: 0.7rem; background: var(--leaf-soft); }
-.polaroid figcaption { padding: 0.55rem 0.25rem 0.7rem; font-family: var(--f-hand); font-size: 1.3rem; line-height: 1.1; text-align: center; }
-.p1 { --t: translate(-34%, -6%) rotate(-7deg); transform: var(--t); animation-delay: 0.1s; }
-.p2 { --t: translate(34%, -2%) rotate(6deg); transform: var(--t); animation-delay: 0.22s; }
-.p3 { --t: translate(0, 12%) rotate(-1.5deg); transform: var(--t); animation-delay: 0.34s; z-index: 1; }
-.hero-pilha:hover .p1 { transform: translate(-40%, -9%) rotate(-10deg); }
-.hero-pilha:hover .p2 { transform: translate(40%, -5%) rotate(9deg); }
-@keyframes entra-polaroid {
-  from { opacity: 0; transform: translateY(40px) rotate(0deg) scale(0.94); }
-  to { opacity: 1; transform: var(--t); }
-}
-.bilhete {
-  position: absolute; z-index: 2; right: 4%; top: 4%;
-  padding: 0.45rem 1rem 0.55rem;
-  border-radius: 0.4rem;
-  background: var(--sun); color: var(--sun-ink);
-  font-family: var(--f-hand); font-size: 1.35rem; line-height: 1;
-  transform: rotate(-4deg);
-  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.35);
-  animation: entra-bilhete 0.8s var(--spring) 0.8s both;
-}
-@keyframes entra-bilhete { from { opacity: 0; transform: rotate(-12deg) scale(0.6); } to { opacity: 1; transform: rotate(-4deg); } }
 
 .hero-texto > * { animation: sobe 0.9s var(--ease) both; }
-.hero-texto > :nth-child(2) { animation-delay: 0.06s; }
-.hero-texto > :nth-child(3) { animation-delay: 0.12s; }
-.hero-texto > :nth-child(4) { animation-delay: 0.18s; }
-.hero-texto > :nth-child(5) { animation-delay: 0.24s; }
+.hero-texto > :nth-child(2) { animation-delay: 0.08s; }
+.hero-texto > :nth-child(3) { animation-delay: 0.16s; }
 @keyframes sobe { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
-
-@media (max-width: 860px) {
-  .hero { grid-template-columns: minmax(0, 1fr); }
-  .hero-pilha { min-height: 23rem; }
-  .polaroid { width: min(48%, 13rem); }
-  .polaroid figcaption { font-size: 1.1rem; }
-}
-@media (max-width: 480px) {
-  .hero-numeros { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
-  .hero-numeros li { flex-direction: row; align-items: baseline; gap: 0.6rem; }
-  .hero-pilha { min-height: 19rem; }
-  .p1 { --t: translate(-30%, -6%) rotate(-6deg); }
-  .p2 { --t: translate(30%, -2%) rotate(5deg); }
-  .bilhete { right: 0; font-size: 1.15rem; }
-}
 
 /* ---------- Seções ---------- */
 .secao {

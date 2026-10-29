@@ -8,7 +8,7 @@
 const CONTATO = {
   whatsapp: "11999990000", // DDD + número, só dígitos
   instagram: "amordebichocajamar", // sem o @
-  pix: "pix@amordebichocajamar.com.br",
+  pix: "amordebicho.amordebicho@gmail.com",
 };
 
 // ---------------------------------------------------------------------

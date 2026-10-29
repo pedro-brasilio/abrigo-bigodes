@@ -8,6 +8,7 @@ Apresenta o trabalho de proteção animal independente (sem abrigo e sem equipe 
 
 ## Seções
 
+- **Início**: apresentação do projeto, logo e botões para doar e seguir no Instagram
 - **Nosso trabalho**: objetivo do projeto e explicação do Protocolo CED
 - **Os Castrados**: vídeos dos animais atendidos pelo CED, com link para o Instagram
 - **Animais para adoção**: fichas com filtros por espécie e idade, contato do responsável por cada animal e botão que abre o WhatsApp com a mensagem pronta
@@ -16,6 +17,8 @@ Apresenta o trabalho de proteção animal independente (sem abrigo e sem equipe 
 - **Prestação de contas**: relatórios mensais com entradas, saídas, saldo e comprovantes, com histórico dos meses anteriores
 
 Tema claro e escuro automático e layout responsivo (celular a desktop).
+
+O logo fica em `img/logo.svg` e também é usado como ícone da aba do navegador.
 
 ## Como atualizar o conteúdo
 
@@ -44,7 +47,7 @@ Abra o `index.html` no navegador ou use o Live Server do VS Code.
 
 ## Observação
 
-Nomes, telefones, PIX, fotos, vídeos e valores da prestação de contas são exemplos e precisam ser trocados pelos dados reais antes da publicação.
+Nomes, telefones, fotos, vídeos e valores da prestação de contas são exemplos e precisam ser trocados pelos dados reais antes da publicação.
 
 ## Licença
 

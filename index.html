@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Calistoga&family=Figtree:wght@400;500;600;700&family=Gochi+Hand&display=swap">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -46,36 +47,24 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-texto">
-        <h1>Cuidando dos bichos de Cajamar, um de cada vez.</h1>
-        <p class="hero-sub">O Amor de Bicho Cajamar é um trabalho independente de proteção animal. Sem abrigo e sem equipe fixa: castramos animais comunitários pelo Protocolo CED, ajudamos em resgates e divulgamos quem está procurando uma família.</p>
-        <div class="hero-acoes">
-          <a class="btn btn-primario" href="#trabalho">
-            Conhecer o trabalho
-            <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
-          </a>
-          <a class="btn btn-fantasma" href="#animais">Ver animais para adoção</a>
+        <div class="hero-topo">
+          <h1>Cuidado de animais de rua em Cajamar</h1>
+          <!-- Logo: cabeça de gato em forma de coração, com olhos fechados de quem está tranquilo -->
+          <svg class="hero-logo" viewBox="0 0 120 120" aria-hidden="true">
+            <path class="hero-logo-forma" d="M60 106 C38 94 12 74 12 49 L19 13 Q21 9 25 12 L44 29 C50 27 55 30 60 37 C65 30 70 27 76 29 L95 12 Q99 9 101 13 L108 49 C108 74 82 94 60 106 Z"/>
+            <path class="hero-logo-olhos" d="M35 62 Q42 69 49 62 M71 62 Q78 69 85 62"/>
+          </svg>
         </div>
-        <ul class="hero-numeros">
-          <li><strong>CED</strong><span>captura, esterilização e devolução</span></li>
-          <li><strong>Independente</strong><span>sem abrigo e sem equipe fixa</span></li>
-          <li><strong>Mensal</strong><span>prestação de contas aberta</span></li>
-        </ul>
-      </div>
-
-      <div class="hero-pilha" aria-hidden="true">
-        <figure class="polaroid p1">
-          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=520&h=600&fit=crop&q=75&auto=format" alt="" width="520" height="600">
-          <figcaption>Mimosa, 2 anos</figcaption>
-        </figure>
-        <figure class="polaroid p2">
-          <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=520&h=600&fit=crop&q=75&auto=format" alt="" width="520" height="600">
-          <figcaption>Biscoito, 4 meses</figcaption>
-        </figure>
-        <figure class="polaroid p3">
-          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=520&h=600&fit=crop&q=75&auto=format" alt="" width="520" height="600">
-          <figcaption>Paçoca, 3 anos</figcaption>
-        </figure>
-        <p class="bilhete">me leva pra casa?</p>
+        <div class="hero-apoio">
+          <p class="hero-sub">Um trabalho independente de proteção animal, sem abrigo e sem equipe fixa. Castramos animais comunitários pelo Protocolo CED, socorremos quem aparece doente ou ferido e ajudamos cada um a encontrar uma família.</p>
+          <div class="hero-acoes">
+            <a class="btn btn-primario" href="#ajude">
+              Quero doar
+              <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+            <a class="btn btn-fantasma" data-contato="instagram" href="https://www.instagram.com/amordebichocajamar/" target="_blank" rel="noopener">Seguir no Instagram</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -246,7 +235,7 @@
             <h3>Doe pelo PIX</h3>
             <p>Qualquer valor ajuda. A chave é:</p>
             <div class="pix">
-              <code id="chave-pix" data-contato="pix" data-texto>pix@amordebichocajamar.com.br</code>
+              <code id="chave-pix" data-contato="pix" data-texto>amordebicho.amordebicho@gmail.com</code>
               <button class="btn-copiar" type="button" data-copiar="chave-pix">Copiar</button>
             </div>
           </div>
@@ -289,11 +278,11 @@
       </div>
       <div>
         <h3>Onde atuamos</h3>
-        <p>Cajamar e região – SP<br>Trabalho independente, sem sede ou abrigo físico</p>
+        <p>Cajamar e região – SP<br>Trabalho independente</p>
       </div>
       <div>
         <h3>Contato</h3>
-        <p>WhatsApp: <a data-contato="whatsapp" data-texto href="https://wa.me/5511999990000" target="_blank" rel="noopener">(11) 99999-0000</a><br>Instagram: <a data-contato="instagram" data-texto href="https://www.instagram.com/amordebichocajamar/" target="_blank" rel="noopener">@amordebichocajamar</a></p>
+        <p>Instagram:<a data-contato="instagram" data-texto href="https://www.instagram.com/amordebichocajamar/" target="_blank" rel="noopener">@amordebichocajamar</a></p>
       </div>
       <div>
         <h3>Transparência</h3>
