@@ -18,7 +18,7 @@ Apresenta o trabalho de proteção animal independente (sem abrigo e sem equipe 
 
 Tema claro e escuro automático e layout responsivo (celular a desktop).
 
-O logo fica em `img/logo.svg` e também é usado como ícone da aba do navegador.
+O ícone do logo fica em `img/logo-icone.png` (ao lado do nome) e os ícones da aba do navegador em `img/favicon.png` e `img/apple-touch-icon.png`.
 
 ## Como atualizar o conteúdo
 
